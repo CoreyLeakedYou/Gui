@@ -31,6 +31,13 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/CoreyLeakedYou/Fling
   print("Clicked")
 end)
 
+
+Section:NewButton("priv cyrus", "slapped is a fag btw", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CoreyLeakedYou/cyrus/main/cyrus"))()
+  print("Clicked")
+end)
+
+
 Section:NewButton("DrpoppaAdminUNLEAKED", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DrPoppadopolist/DrPoppa-Admin/main/Code.lua",true))()
     print("Clicked")
