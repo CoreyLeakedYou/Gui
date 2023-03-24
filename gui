@@ -4,8 +4,8 @@ local Window = Library.CreateLib("SLAPPED AND COREYS PRIVATE GUI", "Midnight")
 local Tab = Window:NewTab("scripts")
 local Section = Tab:NewSection("scripts")
 
-Section:NewButton("Lower Fps", "Low fps", function()
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/CoreyLeakedYou/LowerFps/main/fps"),true))()
+Section:NewButton("Pipe hit", "Pipe hit Reset for Inf stam", function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/CoreyLeakedYou/Pipe/main/pipe"),true))()
   print("Clicked")
 end)
 
