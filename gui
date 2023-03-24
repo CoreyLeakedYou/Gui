@@ -4,8 +4,8 @@ local Window = Library.CreateLib("SLAPPED AND COREYS PRIVATE GUI", "Midnight")
 local Tab = Window:NewTab("scripts")
 local Section = Tab:NewSection("scripts")
 
-Section:NewButton("Lower Fps", "Low fps", function()
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/CoreyLeakedYou/LowerFps/main/fps"),true))()
+Section:NewButton("Pipe press 3 dots", "Rexecute everytime", function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/CoreyLeakedYou/Pipe/main/pipe"),true))()
   print("Clicked")
 end)
 
@@ -34,8 +34,6 @@ Section:NewButton("Fling (press 3 dots)", "Press P to fling dont execute tweice"
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/CoreyLeakedYou/Fling/main/fling"),true))()
   print("Clicked")
 end)
-
-
 
 Section:NewButton("DrpoppaAdminUNLEAKED", "ButtonInfo", function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DrPoppadopolist/DrPoppa-Admin/main/Code.lua",true))()
