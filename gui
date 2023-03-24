@@ -25,10 +25,6 @@ Section:NewKeybind("Toggle The Gui.", "KeybindInfo", Enum.KeyCode.F, function()
     Library:ToggleUI()
 end)
 
-Section:NewButton("priv cyrus", "Cyrus", function()
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/CoreyLeakedYou/cyrus/main/cyrus"),true))()
-    print("Clicked")
-end)
 
 Section:NewButton("Fling (press 3 dots)", "Press P to fling dont execute tweice", function()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/CoreyLeakedYou/Fling/main/fling"),true))()
