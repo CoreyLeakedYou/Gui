@@ -5,7 +5,16 @@ local Tab = Window:NewTab("scripts")
 local Section = Tab:NewSection("scripts")
 
 Section:NewButton("Pipe hit", "Pipe hit Reset for Inf stam", function()
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/CoreyLeakedYou/Pipe/main/pipe"),true))()
+Tool = 'Pipe' -- Options: Knife, Pipe, Punch, replace "Pipe" with option
+A = game.Players.LocalPlayer:WaitForChild 'Backpack'[string.gsub(Tool, '^%l', string.upper)]
+T = game.Players.LocalPlayer:WaitForChild 'Backpack':WaitForChild 'ServerTraits'.Touch
+
+game:GetService 'RunService'.Stepped:Connect(
+   function()
+       game.Players.LocalPlayer.Character:WaitForChild 'Stam'.Value = 99e9
+       T:FireServer(A, A, true)
+   end
+)
   print("Clicked")
 end)
 
