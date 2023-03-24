@@ -4,6 +4,11 @@ local Window = Library.CreateLib("SLAPPED AND COREYS PRIVATE GUI", "Midnight")
 local Tab = Window:NewTab("scripts")
 local Section = Tab:NewSection("scripts")
 
+Section:NewButton("Lower Fps", "Low fps", function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/CoreyLeakedYou/LowerFps/main/fps"),true))()
+  print("Clicked")
+end)
+
 Section:NewToggle("Toggle", "its just toggle dude tf", function(state)
     if state then
         print("Toggle On")
@@ -13,11 +18,11 @@ Section:NewToggle("Toggle", "its just toggle dude tf", function(state)
 end)
 
 Section:NewKeybind("Toggle The Gui.", "KeybindInfo", Enum.KeyCode.F, function()
-	print("You just clicked the bind")
+    print("You just clicked the bind")
 end)
 
 Section:NewKeybind("Toggle The Gui.", "KeybindInfo", Enum.KeyCode.F, function()
-	Library:ToggleUI()
+    Library:ToggleUI()
 end)
 
 Section:NewButton("priv cyrus", "Cyrus", function()
@@ -37,6 +42,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/DrPoppadopolist/DrPop
     print("Clicked")
 end)
 
+Section:NewButton("Gui", "Has alot of shit in it", function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/CoreyLeakedYou/Gui/main/guit"),true))()
+    print("Clicked")
+end)
 
 Section:NewButton("Inf Respawn thing idk", "ButtonInfo", function()
 loadstring(game:HttpGet("https://gist.githubusercontent.com/KOBEBRYANTONG/38c7a2d3ad49bf8174c3809333f98f2c/raw/24710cdf6315be501cfbeae10e32566989a86799/inf%2520ff", true))()
@@ -55,7 +64,7 @@ end)
 
 
 Section:NewButton("Inf Stam", "ButtonInfo", function()
-local LocalP = game.Players.LocalPlayer LocalP.Character.Stam.Changed:Connect(function() 	LocalP.Character:WaitForChild"Stam" 	LocalP.Character.Stam.Value = 100 end) LocalP.CharacterAdded:Connect(function() 	LocalP.Character:WaitForChild"Stam" 	LocalP.Character.Stam.Changed:Connect(function() 		LocalP.Character.Stam.Value = 100 	end) end)
+local LocalP = game.Players.LocalPlayer LocalP.Character.Stam.Changed:Connect(function()     LocalP.Character:WaitForChild"Stam"     LocalP.Character.Stam.Value = 100 end) LocalP.CharacterAdded:Connect(function()     LocalP.Character:WaitForChild"Stam"     LocalP.Character.Stam.Changed:Connect(function()         LocalP.Character.Stam.Value = 100     end) end)
     print("Clicked")
 end)
 
